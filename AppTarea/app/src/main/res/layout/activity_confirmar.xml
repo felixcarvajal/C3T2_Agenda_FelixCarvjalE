@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/informacion_confirmar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/layoutDos_paddingBottom"
+    android:paddingLeft="@dimen/layoutDos_paddingLeft"
+    android:paddingRight="@dimen/layoutDos_paddingRight"
+    android:paddingTop="@dimen/layoutDos_paddingTop"
+    tools:context="com.android.fcarvajal.agenda.ConfirmarActivity">
+
+
+    <TextView
+        android:text="@string/titulo_confirmar_datos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/elementos_paddingTop"
+        android:paddingBottom="@dimen/elementos_paddingBottom"
+        android:id="@+id/cd_titulo"
+        android:textStyle="bold"
+        android:textSize="@dimen/confirmar_datos"
+        android:textAlignment="center" />
+
+    <TextView
+        android:text="Nombre Completo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/elementos_paddingTop"
+        android:paddingBottom="@dimen/elementos_paddingBottom"
+        android:id="@+id/cd_nombre_completo"
+        android:layout_below="@+id/cd_titulo" />
+
+    <TextView
+        android:text="Fecha Nacimiento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/elementos_paddingTop"
+        android:paddingBottom="@dimen/elementos_paddingBottom"
+        android:id="@+id/cd_fecha_nacimiento"
+        android:layout_below="@+id/nombre_completo" />
+
+    <TextView
+        android:text="Teléfono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/elementos_paddingTop"
+        android:paddingBottom="@dimen/elementos_paddingBottom"
+        android:id="@+id/cd_telefono"
+        android:layout_below="@+id/cd_fecha_nacimiento"/>
+
+    <TextView
+        android:text="Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/elementos_paddingTop"
+        android:paddingBottom="@dimen/elementos_paddingBottom"
+        android:id="@+id/cd_email"
+        android:layout_below="@+id/cd_telefono"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/layoutUno_paddingLeft"
+        android:paddingRight="@dimen/layoutUno_paddingRight">
+
+        <TextView
+            android:text="@string/descripcion"
+            android:layout_width="@dimen/descripcion_ancho"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/elementos_paddingTop"
+            android:paddingBottom="@dimen/elementos_paddingBottom"
+            android:id="@+id/cd_descripcion"
+            android:layout_below="@+id/cd_email"/>
+
+        <TextView
+            android:text="Descripción Detalle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/descripcion_detalle"
+            android:paddingTop="@dimen/elementos_paddingTop"
+            android:paddingBottom="@dimen/elementos_paddingBottom"
+            android:id="@+id/cd_descripciondetalle"
+            android:layout_below="@+id/cd_descripcion"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="@dimen/editar_datos"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/elementos_paddingTop"
+        android:paddingBottom="@dimen/elementos_paddingBottom"
+        android:id="@+id/cd_editar_datos"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:text="@string/editar_datos" />
+
+</LinearLayout>

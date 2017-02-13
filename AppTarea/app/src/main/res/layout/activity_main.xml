@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/layoutUno_paddingBottom"
+    android:paddingLeft="@dimen/layoutUno_paddingLeft"
+    android:paddingRight="@dimen/layoutUno_paddingRight"
+    android:paddingTop="@dimen/layoutUno_paddingTop"
+    tools:context="com.android.fcarvajal.agenda.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/layoutDos_paddingLeft"
+        android:paddingRight="@dimen/layoutDos_paddingRight">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/elementos_paddingTop"
+            android:paddingBottom="@dimen/elementos_paddingBottom"
+            android:inputType="textPersonName"
+            android:text="@string/formulario_nombrecompleto"
+            android:ems="10"
+            android:id="@+id/nombre_completo" />
+
+        <DatePicker
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/elementos_paddingTop"
+            android:paddingBottom="@dimen/elementos_paddingBottom"
+            android:id="@+id/fecha_nacimiento"
+            android:layout_below="@+id/nombre_completo"
+            style="@style/date_picker_theme" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/elementos_paddingTop"
+            android:paddingBottom="@dimen/elementos_paddingBottom"
+            android:inputType="phone"
+            android:text="@string/formulario_telefono"
+            android:ems="10"
+            android:id="@+id/telefono"
+            android:layout_below="@+id/fecha_nacimiento"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/elementos_paddingTop"
+            android:paddingBottom="@dimen/elementos_paddingBottom"
+            android:layout_below="@+id/telefono"
+            android:inputType="textEmailAddress"
+            android:text="@string/formulario_email"
+            android:ems="10"
+            android:id="@+id/email" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/elementos_paddingTop"
+            android:paddingBottom="@dimen/elementos_paddingBottom"
+            android:inputType="textMultiLine"
+            android:maxLines="2"
+            android:lines="2"
+            android:ems="10"
+            android:id="@+id/descripcion"
+            android:text="@string/formulario_descripcioncontacto"
+            android:layout_below="@+id/email"
+            android:gravity="left"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:text="@string/boton_siguiente"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingTop="@dimen/elementos_paddingTop"
+            android:paddingBottom="@dimen/elementos_paddingBottom"
+            android:id="@+id/siguiente" />
+
+    </LinearLayout>
+
+</RelativeLayout>

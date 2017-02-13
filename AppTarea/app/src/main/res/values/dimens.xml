@@ -1,0 +1,29 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+
+    <dimen name="layoutUno_paddingBottom">0dp</dimen>
+    <dimen name="layoutUno_paddingTop">0dp</dimen>
+    <dimen name="layoutUno_paddingLeft">0dp</dimen>
+    <dimen name="layoutUno_paddingRight">0dp</dimen>
+
+    <dimen name="layoutDos_paddingBottom">0dp</dimen>
+    <dimen name="layoutDos_paddingTop">0dp</dimen>
+    <dimen name="layoutDos_paddingLeft">16dp</dimen>
+    <dimen name="layoutDos_paddingRight">16dp</dimen>
+
+    <dimen name="elementos_paddingTop">16dp</dimen>
+    <dimen name="elementos_paddingBottom">16dp</dimen>
+
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="confirmar_datos">22dp</dimen>
+
+    <dimen name="descripcion_ancho">100dp</dimen>
+
+    <dimen name="descripcion_detalle">120dp</dimen>
+
+    <dimen name="editar_datos">150dp</dimen>
+
+</resources>

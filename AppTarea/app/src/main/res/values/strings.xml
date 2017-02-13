@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Agenda</string>
+
+    <string name="titulo_agregar_contacto">Agregar Contacto</string>
+    <string name="titulo_confirmar_datos">Confirmar Datos</string>
+
+    <string name="formulario_nombrecompleto">Nombre completo</string>
+    <string name="formulario_fechanacimiento">Fecha de nacimiento</string>
+    <string name="formulario_telefono">Teléfono</string>
+    <string name="formulario_email">Email</string>
+    <string name="formulario_descripcioncontacto">Descripción de contacto</string>
+
+    <string name="boton_siguiente">Siguiente</string>
+
+    <string name="descripcion">Descripción:</string>
+
+    <string name="editar_datos">Editar Datos</string>
+
+
+</resources>
